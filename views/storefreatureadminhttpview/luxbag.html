@@ -1,0 +1,37 @@
+
+<h3>Cart</h3>
+
+
+<a href="#/storefreatureadminhttp"><button>Store</button></a>
+
+<p>SubTotal: </p>
+
+<div ng-repeat="bag in bags">
+  <h3> {{bag.bag}} </h3>
+  <p> {{bag.designer}} </p>
+  <p> {{bag.price | currency}} </p>
+  <p> {{bag.description}} </p>
+  <img src="{{bag.image}}" width="150" height="150" alt="bag"/>
+  <p><a href= "{{bag.link}}">Brand's Site</a></p>
+  <button ng-click="deleteBag(bag._id)">Don't like it move it</button>
+</div>
+
+
+<!-- reviewDate:new Date(),
+      reviewDescription:review.description,
+      reviewCustomer:review.customer
+ <h3>{{cheapproduct.bag}}</h3>
+	<h3>{{cheapproduct.designer}}</h3>
+<h3>{{cheapproduct.price | currency}}</h3>
+	<img ng-src="{{cheapproduct.image}}">
+	<p>{{cheapproduct.description}}</p>
+	<a href ="{{cheapproduct.link}}"></a>
+
+
+
+ quantity : bag.quantity,
+      designer: bag.designer,
+      price: bag.price,
+      image: bag.image,
+      description: bag.description,
+      link: bag.link -->
